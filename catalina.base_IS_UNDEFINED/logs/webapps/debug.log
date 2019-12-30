@@ -1,0 +1,3 @@
+2019-12-30 20:33:30.669 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: select * from tb_area order by priority desc 
+2019-12-30 20:33:30.686 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2019-12-30 20:33:30.705 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 3

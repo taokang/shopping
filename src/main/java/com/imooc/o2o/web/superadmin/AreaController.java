@@ -21,12 +21,9 @@ public class AreaController {
 
     @RequestMapping(value = "/listarea")
     @ResponseBody
-    private Map<String, Object> listArea() {
-        Map<String,Object> modelMap=new HashMap<String,Object>();
-        List<Area> list = areaService.getAreaList();
-        list=areaService.getAreaList();
-        modelMap.put("rows",list);
-        modelMap.put("total",list.size());
-        return modelMap;
+    private String test(){
+        System.out.println("test");
+        return "test";
     }
+
 }
