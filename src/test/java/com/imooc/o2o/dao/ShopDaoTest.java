@@ -13,25 +13,26 @@ import java.util.Date;
 
 public class ShopDaoTest extends BaseTest {
     @Autowired
-    private  ShopDao shopDao;
+    private ShopDao shopDao;
 
     @Test
-    public void testInsertShop(){
+    public void testInsertShop() {
+        System.out.println("测试去玩儿");
         Shop shop = new Shop();
         PersonInfo owner = new PersonInfo();
         Area area = new Area();
         ShopCategory shopCategory = new ShopCategory();
         owner.setUserId((long) 1);
-        area.setAreaId(2);
+        area.setAreaId((Integer) 1);
         shopCategory.setShopCategoryId(1L);
         shop.setOwner(owner);
         shop.setArea(area);
         shop.setShopCategory(shopCategory);
         shop.setShopName("测试的店铺");
-        shop.setShopDesc("test");
-        shop.setShopAddr("test");
-        shop.setPhone("test");
-        shop.setShopImg("test");
+        shop.setShopDesc("test1");
+        shop.setShopAddr("test2");
+        shop.setPhone("test3");
+        shop.setShopImg("test4");
         shop.setCreateTime(new Date());
         shop.setEnableStatus(0);
         shop.setAdvice("审核中");
