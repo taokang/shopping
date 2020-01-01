@@ -18,4 +18,8 @@
 		#{shopDesc},#{shopAddr},#{phone},#{shopImg},#{priority},
 		#{createTime},#{lastEditTime}, #{enableStatus},#{advice})
 	</insert>
+
+	<update id="updateShop" parameterType="com.imooc.o2o.dao.ShopDao">
+
+	</update>
 </mapper>
