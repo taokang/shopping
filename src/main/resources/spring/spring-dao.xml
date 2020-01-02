@@ -41,6 +41,9 @@
     </bean>
 
     <!-- 4.配置扫描Dao接口包，动态实现Dao接口，注入到spring容器中 -->
+<!--    注入需要扫描的包，它会自动扫描
+这个包下的接口，然后实现这些接口，
+并且会实例化这些接口的实现类,org.mybatis.spring.mapper.MapperScannerConfigurer这个类很重要-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 注入sqlSessionFactory -->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />

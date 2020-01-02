@@ -6,11 +6,11 @@ import java.util.Date;
 public class ShopCategory {
     // 主键ID
     private Long shopCategoryId;
-    // 类别名
+    // 店铺名
     private String shopCategoryName;
-    // 类别描述
+    // 店铺描述
     private String shopCategoryDesc;
-    // 类别图片地址(针对一级类别)
+    // 店铺图片地址(针对一级类别)
     private String shopCategoryImg;
     // 权重，越大越排前显示
     private Integer priority;
