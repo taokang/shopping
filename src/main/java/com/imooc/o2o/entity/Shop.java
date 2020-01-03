@@ -23,6 +23,7 @@ public class Shop {
     // 最近一次更新的时间
     private Date lastEditTime;
     // -1.不可用 0.审核中 1.可用
+    //店铺一创建默认是审核中的
     private Integer enableStatus;
     // 超级管理员给店家的提醒，包括为什么审核不通过等
     private String advice;

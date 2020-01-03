@@ -6,6 +6,7 @@ import com.imooc.o2o.entity.PersonInfo;
 import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.entity.ShopCategory;
 import com.sun.javafx.font.PrismFontFactory;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -16,6 +17,7 @@ public class ShopDaoTest extends BaseTest {
     private ShopDao shopDao;
 
     @Test
+    @Ignore
     public void testInsertShop() {
         System.out.println("测试去玩儿");
         Shop shop = new Shop();
@@ -38,5 +40,16 @@ public class ShopDaoTest extends BaseTest {
         shop.setAdvice("审核中");
         int effectedNum = shopDao.insertShop(shop);
         System.out.println("返回值为:"+effectedNum);
+    }
+
+    @Test
+    public void updateShop(){
+        System.out.println("更新店铺！");
+        Shop shop = new Shop();
+        shop.setShopId((long) 1);
+        shop.setShopName("更新店铺测试");
+        shop.setLastEditTime(new Date());
+        int k=shopDao.updateShop(shop);
+        System.out.println("返回值为:"+k);
     }
 }
