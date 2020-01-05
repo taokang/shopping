@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 2020-01-03 00:02:19.540 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time, enable_status, advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?, ?,?) 
 2020-01-03 00:02:19.573 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 测试的店铺(String), test1(String), test2(String), test3(String), test4(String), null, 2020-01-03 00:02:19.406(Timestamp), null, 0(Integer), 审核中(String)
 2020-01-03 00:06:10.819 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id, area_id, shop_category_id, shop_name, shop_desc, shop_addr, phone, shop_img, priority, create_time, last_edit_time, enable_status, advice) VALUES (?,?,?,?, ?,?,?,?,?, ?,?, ?,?) 
 2020-01-03 00:06:10.849 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), 测试的店铺(String), test1(String), test2(String), test3(String), test4(String), null, 2020-01-03 00:06:10.687(Timestamp), null, 0(Integer), 审核中(String)
 2020-01-03 00:06:10.852 [main] DEBUG com.imooc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+=======
+2020-01-03 16:55:14.898 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=? where shop_id=? 
+2020-01-03 16:55:15.017 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 更新店铺测试(String), 1(Long)
+2020-01-03 16:55:15.188 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2020-01-03 16:57:03.807 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, last_edit_time=? where shop_id=? 
+2020-01-03 16:57:03.849 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - ==> Parameters: 更新店铺测试(String), 2020-01-03 16:57:03.291(Timestamp), 1(Long)
+2020-01-03 16:57:04.262 [main] DEBUG com.imooc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+>>>>>>> dc98777f958196b61c653947f6b66dcb3c9e4eb2
